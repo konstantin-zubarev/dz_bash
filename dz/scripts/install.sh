@@ -4,7 +4,7 @@
 
 mkdir /var/log/bash_access
 chown vagrant /var/log/bash_access
-yum install vim mailx -y
+yum install vim -y
 cp /vagrant/scripts/main.sh /etc/init.d/
 chmod +x /etc/init.d/main.sh
 cp /vagrant/access.log /var/log/bash_access/
