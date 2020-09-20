@@ -6,21 +6,13 @@
 - список всех кодов возврата с указанием их кол-ва с момента последнего запуска
 
 Для выполнения написал скрипт main.sh. В скрипте используються переменые:
-```
-$filename - лог файл access.log (из задания), путь к файлу /var/log/bash_access/access.log
-```
-```
-$result - лог файл, результат работы скрипта, путь к файлу /var/log/bash_access/result.log
+$filename - лог файл access.log (из задания), путь к файлу /var/log/bash_access/access.log; $result - лог файл, результат работы последнего запуска скрипта, путь к файлу /var/log/bash_access/result.log; $runtime - лог файл, для хранение даты и времени последней записи, путь к файлу /var/log/bash_access/runtime.log;
+
+$temp - лог файл, для копирования необходимой части access.log работы с лог файлом access.log, путь к файлу /var/log/bash_access/temp.log;
 ```
 ```
-$runtime - лог файл, для хранение даты и времени последней записи, путь к файлу /var/log/bash_access/runtime.log
+$error - лог файл, пишит ошибки в случии отсутствие лог файлов access.log и temp.log, путь к файлу /var/log/bash_access/error.log;
 ```
 ```
-$temp - лог файл, для работы с лог файлом access.log, путь к файлу /var/log/bash_access/temp.log
-```
-```
-$error - лог файл, пишит ошибки в случии отсутствие лог файлов access.log и temp.log, путь к файлу /var/log/bash_access/error.log
-```
-```
-$lockfile - лог файл, для защиты от мультизапуска, путь к файлу /tmp/localfile
+$lockfile - лог файл, для защиты от мультизапуска, путь к файлу /tmp/localfile;
 ```
