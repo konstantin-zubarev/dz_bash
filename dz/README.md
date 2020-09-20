@@ -6,13 +6,9 @@
 - список всех кодов возврата с указанием их кол-ва с момента последнего запуска
 
 Для выполнения написал скрипт main.sh. В скрипте используються переменые:
-$filename - лог файл access.log (из задания), путь к файлу /var/log/bash_access/access.log; $result - лог файл, результат работы последнего запуска скрипта, путь к файлу /var/log/bash_access/result.log; $runtime - лог файл, для хранение даты и времени последней записи, путь к файлу /var/log/bash_access/runtime.log;
+`$filename` - лог файл access.log (из задания), путь к файлу `/var/log/bash_access/access.log`; `$result` - лог файл, результат работы последнего запуска скрипта, путь к файлу `/var/log/bash_access/result.log`; `$runtime` - лог файл, для хранение даты и времени последней записи, путь к файлу `/var/log/bash_access/runtime.log`; `$temp` - лог файл, для копирования необходимой части access.log, путь к файлу `/var/log/bash_access/temp.log`; `$error` - лог файл, пишит ошибки в случии отсутствие лог файлов access.log и temp.log, путь к файлу `/var/log/bash_access/error.log`; `$lockfile` - лог файл, для защиты от мультизапуска, путь к файлу `/tmp/localfile`. В скрипте присутствуюс функции для решении задачи.
+Для наглядной работы развернем Vagrantfile, где скрипт запускаеться с переодичностью 1 мин., а результат выводит виде лога `/var/log/bash_access/result.log`.
 
-$temp - лог файл, для копирования необходимой части access.log работы с лог файлом access.log, путь к файлу /var/log/bash_access/temp.log;
-```
-```
-$error - лог файл, пишит ошибки в случии отсутствие лог файлов access.log и temp.log, путь к файлу /var/log/bash_access/error.log;
-```
-```
-$lockfile - лог файл, для защиты от мультизапуска, путь к файлу /tmp/localfile;
-```
+Ссылка на дополнительную информацию
+- [Bash](https://ru.wikipedia.org/wiki/Bash)
+- [шпаргалка по написанию bash скриптов](https://gist.github.com/Titiaiev/dcb7298389d1276b823bbc96e29f940d)
